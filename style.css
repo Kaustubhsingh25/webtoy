@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    color: #222;
+    transition: 0.3s;
+}
+
+.game {
+    margin-top: 150px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+#message {
+    font-size: 18px;
+}
+
+#redBtn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 20px 35px;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#redBtn:hover {
+    transform: scale(1.1);
+}
+
+#darkBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dark {
+    background: #151515;
+    color: white;
+}
+
+.dark #darkBtn {
+    background: #333;
+    color: white;
+}
+
+.shake {
+    animation: shake 0.2s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-8px); }
+    50% { transform: translateX(8px); }
+    75% { transform: translateX(-8px); }
+    100% { transform: translateX(0); }
+}
+#soundBtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
